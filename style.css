@@ -1,0 +1,76 @@
+.App {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin: 5px 0;
+    position: relative;
+  }
+  
+  .expand-icon {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  
+  .folder-icon,
+  .file-icon {
+    display: inline-block;
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .folder-icon {
+    color: #0ea5e9; /* Màu cho biểu tượng thư mục */
+  }
+  
+  .file-icon {
+    color: #666; /* Màu cho biểu tượng tệp tin */
+  }
+  
+  .expand-icon svg,
+  .folder-icon svg,
+  .file-icon svg {
+    vertical-align: middle;
+  }
+  
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  li:hover {
+    background-color: #f0f0f0; /* Hiệu ứng hover */
+    border-radius: 4px;
+  }
+  
+  li ul {
+    padding-left: 1px;
+  }
+  
+  li ul li {
+    margin-left: 10px;
+    border-left: 2px dashed #ccc;
+    padding-left: 10px;
+    position: relative;
+  }
+  
+  li ul li::before {
+    content: "";
+    width: 10px;
+    height: 100%;
+    border-left: 2px dashed #ccc;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
